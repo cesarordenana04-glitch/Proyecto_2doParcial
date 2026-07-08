@@ -1,12 +1,17 @@
 <?php
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'hospital');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_HOST', 'mysql-25362b36-gabrieleduardourgilesr-1ed4.i.aivencloud.com');
+define('DB_PORT', '24536');
+define('DB_NAME', 'defaultdb');
+define('DB_USER', 'avnadmin');
+define('DB_PASS', 'AVNS_pIUs8bYddXYtmiHKmoX');
 define('DB_CHARSET', 'utf8mb4');
 
-define('URL_BASE', 'http://localhost/PROYECTO_2DOPARCIAL/public/');
+if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'localhost') {
+    define('URL_BASE', 'http://localhost/PROYECTO_2DOPARCIAL/public/');
+} else {
+    define('URL_BASE', '/'); 
+}
 
 class Database
 {
@@ -16,7 +21,7 @@ class Database
     {
         if (self::$conexion === null) {
             try {
-                $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET;
+                $dsn = "mysql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET;
 
                 $opciones = [
                     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
