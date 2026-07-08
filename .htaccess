@@ -1,3 +1,7 @@
 RewriteEngine On
-RewriteRule ^$ public/ [L]
-RewriteRule (.*) public/$1 [L]
+
+# Si la ruta actual YA está apuntando a la carpeta public, ignora la regla y no hagas nada
+RewriteCond %{REQUEST_URI} !^/public/
+
+# De lo contrario, redirige todo el tráfico hacia la carpeta public
+RewriteRule ^(.*)$ public/$1 [L]
