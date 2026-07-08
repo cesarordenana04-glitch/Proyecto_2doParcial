@@ -2,7 +2,7 @@
 // /app/controller/CitaController.php
 require_once '../app/models/Cita.php';
 require_once '../app/models/Paciente.php';
-require_once '../app/models/Medico.php'; // Agregamos el modelo
+require_once '../app/models/medico.php';
 
 class CitaController {
     
