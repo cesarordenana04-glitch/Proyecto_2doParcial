@@ -1,0 +1,52 @@
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+}
+
+.badge-pendiente {
+    background-color: #ffedd5;
+    color: #ea580c;
+}
+
+.badge-confirmada {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.badge-atendida {
+    background-color: #e0f2fe;
+    color: #0284c7;
+}
+
+.badge-cancelada {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.btn-icon.cancel {
+    color: #ea580c;
+}
+
+.btn-icon.cancel:hover {
+    background-color: #ffedd5;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-group select:focus {
+    border-color: var(--primary-color);
+}

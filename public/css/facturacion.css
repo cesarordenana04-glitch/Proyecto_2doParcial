@@ -1,0 +1,222 @@
+.header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-purple {
+    background-color: #6366f1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+.btn-purple:hover { background-color: #4f46e5; }
+
+.btn-orange {
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+.btn-orange:hover { background-color: #ea580c; }
+
+/* --- PANELES (MASTER-DETAIL) --- */
+.form-panel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.panel-header.header-light {
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 24px;
+}
+
+.panel-header h3 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.panel-body { padding: 24px; }
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.dynamic-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.dynamic-row select,
+.dynamic-row input {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.input-servicio { flex: 2; }
+.input-descripcion { flex: 3; }
+
+.price-input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 140px;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 12px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.input-precio {
+    width: 100%;
+    padding-left: 28px !important;
+    text-align: right;
+}
+
+.btn-remove-row {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-remove-row:hover { color: #b91c1c; }
+
+.btn-outline-dashed {
+    width: 100%;
+    padding: 12px;
+    border: 2px dashed #cbd5e1;
+    background-color: transparent;
+    color: #64748b;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+.btn-outline-dashed:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+    background-color: #f8fafc;
+}
+
+.summary-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 1rem;
+    color: #475569;
+}
+
+.summary-bar strong { color: #0f172a; margin-left: 8px; }
+
+.total-highlight {
+    font-size: 1.1rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+.total-highlight strong { color: #ea580c; font-size: 1.2rem; }
+
+.readonly-input {
+    background-color: #f1f5f9 !important;
+    color: #64748b;
+    cursor: not-allowed;
+    border-color: #e2e8f0;
+}
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.total-input {
+    font-weight: bold;
+    color: #ea580c !important;
+    background-color: #fff7ed !important;
+    border-color: #fed7aa !important;
+}
+
+.badge-outline-orange {
+    color: #ea580c;
+    background-color: transparent;
+    border: 1px solid #ea580c;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.form-group select,
+.form-group input:not([type="hidden"]) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: #fff;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    border-color: #f97316; /* Borde naranja característico del módulo al hacer clic */
+}

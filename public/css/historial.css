@@ -1,0 +1,264 @@
+.form-panel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.panel-header h3 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.panel-body { padding: 24px; }
+
+.panel-footer {
+    padding: 16px 24px;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.section-title {
+    font-size: 1rem;
+    color: #475569;
+    margin: 24px 0 16px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.readonly-input {
+    background-color: #f1f5f9 !important;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.accordion-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    transition: border-color 0.3s ease;
+}
+
+.accordion-header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.accordion-header:hover { background-color: #f8fafc; }
+
+.accordion-card.active { border-color: #6366f1; }
+.accordion-card.active .accordion-header { border-bottom: 1px solid #e2e8f0; }
+
+.patient-info-mini {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 250px;
+}
+
+.avatar-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #6366f1;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.details { display: flex; flex-direction: column; }
+.name-text { font-weight: 700; color: #0f172a; font-size: 1.05rem; }
+.ci-text { font-size: 0.85rem; color: #64748b; margin-top: 2px; }
+
+.meta-info {
+    display: flex;
+    gap: 32px;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.meta-info span { display: flex; align-items: center; gap: 8px; }
+
+.action-toggle button {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #64748b;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.accordion-card.active .action-toggle button { transform: rotate(180deg); }
+
+.accordion-body {
+    padding: 24px;
+    display: none;
+}
+.accordion-card.active .accordion-body { display: block; }
+
+.vital-signs-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.vital-card {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 12px 16px;
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.vital-card i { color: #6366f1; font-size: 1.2rem; margin-bottom: 4px; }
+.vital-card strong { color: #0f172a; font-size: 1.05rem; }
+.vital-card span { font-size: 0.75rem; color: #64748b; text-transform: uppercase; font-weight: 600; }
+
+.clinical-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.clinical-block { display: flex; flex-direction: column; gap: 6px; }
+.clinical-block.full-width { grid-column: 1 / -1; }
+.clinical-block h6 { font-size: 0.75rem; color: #64748b; text-transform: uppercase; font-weight: 700; margin: 0; }
+.clinical-block p { font-size: 0.95rem; color: #1e293b; margin: 0; line-height: 1.6; }
+
+.highlight-block {
+    background-color: #eef2ff;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid #6366f1;
+}
+.highlight-block h6 { color: #4338ca; display: flex; align-items: center; gap: 6px; }
+
+.accordion-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.left-actions { display: flex; gap: 16px; }
+
+.btn-text {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.btn-text.delete-btn { color: #dc2626; background-color: #fee2e2; }
+.btn-text.delete-btn:hover { background-color: #fecaca; }
+
+.btn-text.edit-btn { color: #0284c7; background-color: #e0f2fe; }
+.btn-text.edit-btn:hover { background-color: #bae6fd; }
+
+.btn-outline {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    padding: 6px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.btn-outline:hover { background-color: #e2e8f0; color: #1e293b; }
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.form-group select,
+.form-group textarea,
+.form-group input {
+    width: 100%;
+    box-sizing: border-box; /* Evita que el campo se salga del contenedor */
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: #fff;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group select:focus,
+.form-group textarea:focus,
+.form-group input:focus {
+    border-color: #0d9488; /* Color de enfoque */
+}
+
+.form-group textarea {
+    resize: vertical; /* Solo permite agrandarlo hacia abajo */
+    min-height: 80px;
+}
