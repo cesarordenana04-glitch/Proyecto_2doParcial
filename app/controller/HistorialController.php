@@ -2,7 +2,7 @@
 
 require_once '../app/models/Historial.php';
 require_once '../app/models/Paciente.php';
-require_once '../app/models/Medico.php';
+require_once '../app/models/medico.php';
 
 class HistorialController
 {
